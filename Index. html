@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Senthamil Amuthan Sabarish | Medical Student</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#05070f;
+  --card:#0f1426;
+  --neon:#00eaff;
+  --accent:#00ffa6;
+  --text:#e6ebff;
+  --muted:#9aa4c7;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:'Segoe UI',system-ui,sans-serif;
+  background:radial-gradient(circle at top,#0b1230,#04060c);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:70px 20px;
+  animation:fadeDown 1.2s ease;
+}
+
+header h1{
+  margin:0;
+  font-size:34px;
+  color:var(--neon);
+  text-shadow:0 0 18px rgba(0,234,255,.6);
+}
+
+header p{
+  margin:8px 0;
+  color:var(--muted);
+}
+
+/* PROFILE IMAGE */
+.profile{
+  width:140px;
+  height:140px;
+  margin:25px auto;
+  border-radius:50%;
+  border:3px solid var(--neon);
+  box-shadow:0 0 25px rgba(0,234,255,.5);
+  background:#111 url('https://via.placeholder.com/140') center/cover;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+/* CARD */
+.section{
+  background:linear-gradient(145deg,#101634,#0b1022);
+  padding:26px;
+  margin-bottom:28px;
+  border-radius:16px;
+  border:1px solid rgba(0,234,255,.15);
+  box-shadow:0 0 30px rgba(0,234,255,.08);
+  animation:glowIn 1.1s ease;
+}
+
+.section h2{
+  margin-top:0;
+  color:var(--accent);
+}
+
+.section p{
+  line-height:1.65;
+}
+
+/* ECG HEARTBEAT */
+.ecg{
+  height:70px;
+  background:
+  linear-gradient(90deg,
+  transparent 0%,
+  var(--neon) 10%,
+  transparent 20%,
+  var(--neon) 30%,
+  transparent 40%,
+  var(--neon) 50%,
+  transparent 60%);
+  background-size:200% 100%;
+  animation:heartbeat 2s linear infinite;
+  margin:35px 0;
+  opacity:.8;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:30px;
+  color:#000;
+  background:var(--neon);
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 0 20px rgba(0,234,255,.6);
+}
+
+.btn:hover{
+  filter:brightness(1.1);
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  color:var(--neon);
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.contact a:hover{
+  text-shadow:0 0 10px var(--neon);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ANIMATIONS */
+@keyframes glowIn{
+  from{opacity:0;transform:translateY(25px);}
+  to{opacity:1;transform:none;}
+}
+
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(-30px);}
+  to{opacity:1;transform:none;}
+}
+
+@keyframes heartbeat{
+  from{background-position:0%;}
+  to{background-position:200%;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="profile"></div>
+  <h1>Senthamil Amuthan Sabarish</h1>
+  <p>Medical Student • General Medicine</p>
+  <p>Group 204 | SOGMA University</p>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>🧠 About Me</h2>
+    <p>
+      I am a medical student pursuing General Medicine at SOGMA University.
+      My academic focus is on mastering the foundational medical sciences
+      that support clinical excellence and patient-centered care.
+    </p>
+  </div>
+
+  <div class="ecg"></div>
+
+  <div class="section">
+    <h2>🦴 Anatomy</h2>
+    <p>
+      Anatomy forms the structural foundation of medicine. My studies focus on
+      understanding the organization of organs, tissues, and systems and their
+      relevance to clinical practice.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>⚙️ Physiology</h2>
+    <p>
+      Physiology explains how the body functions as an integrated system.
+      I study mechanisms such as neural signaling, circulation, respiration,
+      and homeostasis.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🧪 Biochemistry</h2>
+    <p>
+      Biochemistry connects molecular processes to medicine. My interests include
+      metabolism, enzymes, molecular biology, and biochemical pathways involved
+      in disease and therapy.
+    </p>
+  </div>
+
+  <div class="ecg"></div>
+
+  <div class="section">
+    <h2>📚 Projects & Medical Interests</h2>
+    <p>
+      My projects cover fundamental topics in anatomy, physiology, and
+      biochemistry, with a growing interest in clinical integration
+      and medical research.
+    </p>
+    <a class="btn" href="#" download>Download CV</a>
+  </div>
+
+  <div class="section contact">
+    <h2>📩 Contact</h2>
+    <p>
+      <a href="mailto:Nssabarish30@gmail.com">Nssabarish30@gmail.com</a>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Senthamil Amuthan Sabarish • Medical Student Portfolio
+</footer>
+
+</body>
+</html>
